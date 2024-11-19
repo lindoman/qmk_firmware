@@ -213,10 +213,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
     ),
     [navig] = LAYOUT_split_3x5_3
 	(
-		OSM(MOD_LGUI),LWIN(KC_L),LWIN(KC_E), KC_F4    , TD(dance_f5),      KC_DELETE, C__LEFT  , KC_UP  , C_RIGHT , KC_BSPC ,  
-		KC_LSFT      ,KC_LCTL   ,KC_LALT   , KC_NO    , C_A_DEL     ,      KC_HOME  , KC_LEFT  , KC_DOWN, KC_RIGHT, KC_END  ,		
-		KC_TRNS      ,KC_TRNS   ,KC_TRNS   , KC_TRNS  , TO(media)   ,      OSL(ger), TO(wasd) , KC_RALT, KC_RCTL , KC_ENTER,  
-		                         KC_TRNS   , TO(qwert), TO(qwert)   ,      KC_TRNS  , TO(qwert), KC_TRNS
+		OSM(MOD_LGUI),LWIN(KC_L),LWIN(KC_E), LALT(KC_F4), TD(dance_f5),      KC_DELETE, C__LEFT  , KC_UP  , C_RIGHT , KC_BSPC ,  
+		LCTL(KC_A)   ,LCTL(KC_S),KC_LSFT   , KC_LCTL    , C_A_DEL     ,      KC_HOME  , KC_LEFT  , KC_DOWN, KC_RIGHT, KC_END  ,		
+		LCTL(KC_Z)   ,LCTL(KC_X),LCTL(KC_C), LCTL(KC_V) , TO(media)   ,      OSL(ger) , TO(wasd) , KC_RALT, KC_RCTL , KC_ENTER,  
+		                         KC_TRNS   , TO(qwert)  , TO(qwert)   ,      KC_TRNS  , TO(qwert), KC_TRNS
 	), 
 	[symbl] = LAYOUT_split_3x5_3
 	(
