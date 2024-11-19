@@ -1,0 +1,6 @@
+These instructions are tailored for my own ferris built with elite pi microcontrollers, which require conversion and direct flashing to each side.
+
+put each side of keyboard into boot mode, one at a time. Then, depending on which side is plugged in:
+
+qmk flash -c -kb ferris/sweep_mx_mbuk -km lindoman -e CONVERT_TO=elite_pi -bl uf2-split-left
+qmk flash -c -kb ferris/sweep_mx_mbuk -km lindoman -e CONVERT_TO=elite_pi -bl uf2-split-right

@@ -1,0 +1,4 @@
+flash to one side:
+qmk flash -c -kb dasbob -km lindoman
+then the other (no need to compile second time)
+qmk flash -kb dasbob -km lindoman
