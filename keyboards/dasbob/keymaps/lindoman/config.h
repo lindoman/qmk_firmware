@@ -14,3 +14,4 @@
 #undef TAPPING_TERM
 #define TAPPING_TERM 150
 #undef HOLD_ON_OTHER_KEY_PRESS
+#define LAYOUT LAYOUT_split_3x5_3

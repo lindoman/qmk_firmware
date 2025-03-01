@@ -197,42 +197,42 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
       */
 
 
-    [qwert] = LAYOUT_split_3x5_3
+    [qwert] = LAYOUT
     (
         KC_Q,  KC_W,   KC_E,     KC_R,       KC_T,               KC_Y,       KC_U,       KC_I,    KC_O,   KC_P,
         KC_A,  KC_S,   KC_D,     KC_F,       KC_G,               KC_H,       KC_J,       KC_K,    KC_L,   KC_ENTER,
         MY_Z,  MY_X,  KC_C,     KC_V,       KC_B,               KC_N,       KC_M,       KC_COMM, MY_DOT,MY_SLA,
                        KC_NO,    TT(calcu),  TT(navig),          KC_SPACE ,  OSL(symbl), KC_NO
     ),
-    [col] = LAYOUT_split_3x5_3
+    [col] = LAYOUT
     (
         KC_Q,  KC_W,   KC_F,     KC_P,       KC_B,               KC_J,       KC_L,       KC_U,    KC_Y,   KC_ENTER,
         KC_A,  KC_R,   KC_S,     KC_T,       KC_G,               KC_M,       KC_N,       KC_E,    KC_I,   KC_O,
         MY_Z, MY_X,  KC_C,     KC_D,       KC_V,               KC_K,       KC_H,       KC_COMM, MY_DOT,MY_SLA,
                        KC_TRNS,  TT(calcu),  TT(navig),          KC_SPACE ,  OSL(symbl), KC_TRNS
     ),
-    [navig] = LAYOUT_split_3x5_3
+    [navig] = LAYOUT
 	(
 		OSM(MOD_LGUI),LWIN(KC_L),LWIN(KC_E), LALT(KC_F4), TD(dance_f5),      KC_DELETE, C__LEFT  , KC_UP  , C_RIGHT , KC_BSPC ,  
 		LCTL(KC_A)   ,LCTL(KC_S),KC_LSFT   , KC_LCTL    , C_A_DEL     ,      KC_HOME  , KC_LEFT  , KC_DOWN, KC_RIGHT, KC_END  ,		
 		LCTL(KC_Z)   ,LCTL(KC_X),LCTL(KC_C), LCTL(KC_V) , TO(media)   ,      OSL(ger) , TO(wasd) , KC_RALT, KC_RCTL , KC_ENTER,  
 		                         KC_TRNS   , TO(qwert)  , TO(qwert)   ,      KC_TRNS  , TO(qwert), KC_TRNS
 	), 
-	[symbl] = LAYOUT_split_3x5_3
+	[symbl] = LAYOUT
 	(
 		UK_EXLM, UK_DQUO, UK_PERC    ,UK_DLR     ,UK_PND     ,      UK_CIRC    ,      UK_AMPR,UK_ASTR,KC_LPRN,KC_RPRN,
 		UK_PIPE, UK_QUOT, KC_LCBR    ,KC_RCBR    ,UK_MINS    ,      TD(dance_notkey), KC_LBRC,KC_RBRC,UK_HASH,UK_SCLN,		
 		UK_BSLS, UK_AT  , KC_NO      ,UK_EQL     ,UK_PLUS    ,      TD(dance_numlock),UK_UNDS,UK_SLSH,UK_TILD,UK_COLN,
 		                  KC_TRNS,    TO(qwert)  ,TO(qwert)  ,      KC_TRNS    ,      TO(qwert), KC_TRNS
 	), 
-	[calcu] = LAYOUT_split_3x5_3
+	[calcu] = LAYOUT
 	(
 		KC_ESCAPE,C__LEFT ,KC_UP   ,C_RIGHT ,KC_NO   ,      KC_DELETE, UK_7, UK_8, UK_9, KC_BSPC ,
 		KC_TAB   ,CAL_LEFT,CAL_DOWN,KC_RIGHT,UK_MINS ,      UK_DOT   , UK_4, UK_5, UK_6, KC_ENTER,
 		KC_LSFT  ,KC_LCTL ,KC_LALT ,UK_EQL  ,UK_PLUS ,      UK_ASTR  , UK_1, UK_2, UK_3, UK_SLSH ,
 		                   KC_TRNS, TO(qwert) ,KC_SPACE,    TO(qwert), UK_0, KC_TRNS
 	),
-	[media] = LAYOUT_split_3x5_3
+	[media] = LAYOUT
 	(
 		KC_ESCAPE, KC_NO     ,KC_MS_UP  ,KC_NO      , KC_NO    ,     KC_NO            ,KC_NO          ,KC_MS_WH_UP  , KC_NO     ,KC_NO,
 		KC_NO    , KC_MS_LEFT,KC_MS_DOWN,KC_MS_RIGHT, KC_NO    ,     KC_MS_WH_LEFT    ,KC_MS_BTN1     ,KC_MS_BTN3   , KC_MS_BTN2,KC_MS_WH_RIGHT,  
@@ -240,7 +240,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
 		                      KC_TRNS,   TO(qwert)  , TO(qwert),     KC_TRNS          ,TO(qwert),      KC_TRNS
 	), 
 
-	[wasd] = LAYOUT_split_3x5_3
+	[wasd] = LAYOUT
 	(
 		KC_ESCAPE, KC_Q , KC_W , KC_E , KC_R       ,      KC_TRNS  , KC_TRNS  , KC_TRNS, KC_TRNS, KC_TRNS,  
 		KC_LSFT  , KC_A , KC_S , KC_D , KC_F       ,      KC_TRNS  , KC_TRNS  , KC_TRNS, KC_TRNS, KC_TRNS,  		
@@ -248,7 +248,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
 	                      KC_TRNS,TO(qwert),KC_SPACE,     TO(qwert), TO(qwert), KC_TRNS		
 	),
     // layers used for german letters - alternative to combos
-	[ger] = LAYOUT_split_3x5_3
+	[ger] = LAYOUT
 	(
 		KC_NO    , KC_NO      , KC_NO, KC_NO, KC_NO,             KC_NO, UC_G_U    , KC_NO, UC_G_O    , KC_NO    ,  
 		UC_G_A   , UC_G_S     , KC_NO, KC_NO, KC_NO,             KC_NO, KC_NO     , KC_NO, KC_NO     , KC_NO    ,  	
@@ -256,7 +256,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
 		                       TO(qwert),TO(qwert),TO(qwert),    TO(qwert),TO(qwert),TO(qwert)
 	), 
     /*
-	[geru] = LAYOUT_split_3x5_3
+	[geru] = LAYOUT
 	(
 		KC_NO     , KC_NO     , KC_NO     , KC_NO, KC_NO,       KC_NO,UG_U_UC   , KC_NO, UG_O_UC    , KC_NO    , 
 		UG_A_UC   , UG_SS     , KC_NO     , KC_NO, KC_NO,       KC_NO,KC_NO     , KC_NO, KC_NO      , KC_NO    ,  		
