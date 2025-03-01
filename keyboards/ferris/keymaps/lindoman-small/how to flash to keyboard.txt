@@ -19,3 +19,10 @@ pro-micro:
 qmk flash -c -kb ferris/sweep_mx_mbuk -km lindoman-small
 ...and then like this for the other (optional)
 qmk flash -kb ferris/sweep_mx_mbuk -km lindoman-small
+
+
+When it comes to git, here is a way to get the main branch up to date again:
+git checkout master
+git fetch upstream
+git pull upstream master
+git push origin master
