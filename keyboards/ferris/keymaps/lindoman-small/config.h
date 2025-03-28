@@ -10,3 +10,11 @@
 //#define QUICK_TAP_TERM 10
 #define TAPPING_TERM 150
 #undef HOLD_ON_OTHER_KEY_PRESS
+
+// some slight space saving configs:
+#ifndef NO_DEBUG
+#define NO_DEBUG
+#endif // !NO_DEBUG
+#if !defined(NO_PRINT) && !defined(CONSOLE_ENABLE)
+#define NO_PRINT
+#endif // !NO_PRINT
