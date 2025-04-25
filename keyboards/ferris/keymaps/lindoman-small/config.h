@@ -1,4 +1,5 @@
 #pragma once
+#define SPLIT_USB_DETECT
 #define TAPPING_TOGGLE 3
 #define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX
 #define UNICODE_KEY_MAC	KC_LEFT_ALT	//The key to hold when beginning a Unicode sequence with the macOS input mode

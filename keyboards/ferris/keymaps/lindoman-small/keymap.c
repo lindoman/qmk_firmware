@@ -18,7 +18,7 @@
   //CKC_X,
   //CKC_SLA,
   //CKC_DOT,
-  SMTD_KEYCODES_END,
+  //SMTD_KEYCODES_END,
   ST_MACRO_ROUND_BRACKETS,
   ST_MACRO_SQUARE_BRACKETS,
   ST_MACRO_CURLY_BRACKETS,
@@ -29,7 +29,7 @@
 // new feature to experiment with more stable home row mods.
 // Need to include after custom_keycodes according to the documentation
 // https://github.com/stasmarkin/sm_td
-//#include "features/sm_td.h"
+// #include "features/sm_td.h"
 
 
 enum unicode_names {

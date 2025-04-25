@@ -1,6 +1,6 @@
 #pragma once
-#undef DEBOUNCE
-#define DEBOUNCE 10
+//#undef DEBOUNCE
+//#define DEBOUNCE 10
 #define TAPPING_TOGGLE 3
 // #define COMBO_ONLY_FROM_LAYER 0
 #define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX
